@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Find the longest word you can make with :</h1>
+  <div class="letters">
+    <% @letters.each do |letter| %>
+      <div class="letterbox"><%= letter %></div>
+    <% end %>
+  </div>
+
+  <form action="/score" method="post">
+    <input type="text" name="word" placeholder="Type your word here">
+    <input type="submit">
+  </form>
+</div>
